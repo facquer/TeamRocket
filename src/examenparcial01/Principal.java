@@ -6,6 +6,10 @@
 package examenparcial01;
 
 import examenparcial01.controlador.GestionDato;
+import examenparcial01.modelo.Artista;
+import examenparcial01.modelo.Asistente;
+import examenparcial01.modelo.Boleto;
+import examenparcial01.modelo.Festival;
 import examenparcial01.vista.Ventana;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +29,9 @@ public class Principal {
         List<Artista> ar= new ArrayList<Artista>();
         List<Boleto> bo= new ArrayList<Boleto>();
         List<Festival> fe= new ArrayList<Festival>();
+        
         GestionDato gD = new GestionDato(ar,as,bo,fe);
-        System.out.println("");
+        
         
         
         Ventana v = new Ventana("Examen Parcial 01", gD);

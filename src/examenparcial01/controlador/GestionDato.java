@@ -5,25 +5,33 @@
  */
 package examenparcial01.controlador;
 
+import examenparcial01.modelo.Artista;
+import examenparcial01.modelo.Asistente;
+import examenparcial01.modelo.Boleto;
+import examenparcial01.modelo.Festival;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author Estudiante
  */
 public class GestionDato {
-    private ArrayList<Artista> listaArtista;
-    private ArrayList<Asistente> listaAsistente;
-    private ArrayList<Boleto> listaBoleto;
-    private ArrayList<Festival> listaFestival;
+    private List<Artista> listaArtista;
+    private List<Asistente> listaAsistente;
+    private List<Boleto> listaBoleto;
+    private List<Festival> listaFestival;
 
-    public GestionDato(ArrayList<Artista> listaArtista, ArrayList<Asistente> listaAsistente, ArrayList<Boleto> listaBoleto, ArrayList<Festival> listaFestival) {
+    public GestionDato(List<Artista> listaArtista, List<Asistente> listaAsistente, List<Boleto> listaBoleto, List<Festival> listaFestival) {
         this.listaArtista = listaArtista;
         this.listaAsistente = listaAsistente;
         this.listaBoleto = listaBoleto;
         this.listaFestival = listaFestival;
     }
+
     
+   
+   
     public boolean addArtista(Artista artista){
         return this.listaArtista.add(artista);                
     }
@@ -36,41 +44,40 @@ public class GestionDato {
     public boolean addFestival(Festival festival){
         return this.listaFestival.add(festival);
     }
-    
 
-    public ArrayList<Artista> getListaArtista() {
+    public List<Artista> getListaArtista() {
         return listaArtista;
     }
 
-    public void setListaArtista(ArrayList<Artista> listaArtista) {
+    public void setListaArtista(List<Artista> listaArtista) {
         this.listaArtista = listaArtista;
     }
 
-    public ArrayList<Asistente> getListaAsistente() {
+    public List<Asistente> getListaAsistente() {
         return listaAsistente;
     }
 
-    public void setListaAsistente(ArrayList<Asistente> listaAsistente) {
+    public void setListaAsistente(List<Asistente> listaAsistente) {
         this.listaAsistente = listaAsistente;
     }
 
-    public ArrayList<Boleto> getListaBoleto() {
+    public List<Boleto> getListaBoleto() {
         return listaBoleto;
     }
 
-    public void setListaBoleto(ArrayList<Boleto> listaBoleto) {
+    public void setListaBoleto(List<Boleto> listaBoleto) {
         this.listaBoleto = listaBoleto;
     }
 
-    public ArrayList<Festival> getListaFestival() {
+    public List<Festival> getListaFestival() {
         return listaFestival;
     }
 
-    public void setListaFestival(ArrayList<Festival> listaFestival) {
+    public void setListaFestival(List<Festival> listaFestival) {
         this.listaFestival = listaFestival;
     }
     
-    
 
+    
     
 }
