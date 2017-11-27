@@ -26,6 +26,7 @@ public class Principal {
         List<Boleto> bo= new ArrayList<Boleto>();
         List<Festival> fe= new ArrayList<Festival>();
         GestionDato gD = new GestionDato(ar,as,bo,fe);
+        System.out.println("");
         
         
         Ventana v = new Ventana("Examen Parcial 01", gD);
