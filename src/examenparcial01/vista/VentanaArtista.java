@@ -55,18 +55,18 @@ public class VentanaArtista extends JFrame
 
     public void iniciaComponente() {
 		this.etiList = new ArrayList<JLabel>();
-		this.etiList.add(new JLabel("Ingrese el nombre:"));
-		this.etiList.add(new JLabel("Ingrese el apellido:"));
-		this.etiList.add(new JLabel("Ingrese la cedula:"));
+		this.etiList.add(new JLabel("Nombre:"));
+		this.etiList.add(new JLabel("Apellido:"));
+		this.etiList.add(new JLabel("Cedula:"));
 		this.etiList.add(new JLabel("Fecha de nacimiento:"));
-		this.etiList.add(new JLabel("Ingrese el Genero Musical"));
+		this.etiList.add(new JLabel("Genero Musical"));
 
 		this.txtList = new ArrayList<JTextField>();
-		this.txtList.add(new JTextField(15));
-		this.txtList.add(new JTextField(15));
-		this.txtList.add(new JTextField(15));
-		this.txtList.add(new JTextField(15));
-		this.txtList.add(new JTextField(15));
+		this.txtList.add(new JTextField());
+		this.txtList.add(new JTextField());
+		this.txtList.add(new JTextField());
+		this.txtList.add(new JTextField());
+		this.txtList.add(new JTextField());
 
 		this.boton = new JButton("Guardar");
 		
@@ -79,7 +79,7 @@ public class VentanaArtista extends JFrame
 		this.encabezado[1] = "Apellido";
 		this.encabezado[2] = "Cedula";
 		this.encabezado[3] = "Fecha Nac";
-		this.encabezado[4] = "Genero";
+		this.encabezado[4] = "Genero Musical";
 
 		//this.datos = cargaDatosTabla(this.gestionDato.getArtistaList().size(), 5);
 
