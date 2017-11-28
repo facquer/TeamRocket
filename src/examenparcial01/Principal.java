@@ -10,7 +10,7 @@ import examenparcial01.modelo.Artista;
 import examenparcial01.modelo.Asistente;
 import examenparcial01.modelo.Boleto;
 import examenparcial01.modelo.Festival;
-import examenparcial01.vista.Ventana;
+import examenparcial01.vista.VentanaArtista;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class Principal {
         
         
         
-        Ventana v = new Ventana("Examen Parcial 01", gD);
+        VentanaArtista v = new VentanaArtista( gD);
     }
     
 }
